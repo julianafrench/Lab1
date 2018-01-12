@@ -16,6 +16,7 @@
 
         $students = array();
 
+        // add some students
         $first = new Student();
         $first->surname = "Doe";
         $first->first_name = "John";
@@ -48,6 +49,8 @@
 
         // sort by key
         ksort($students);
+
+        // display students
         foreach ($students as $student)
             echo $student->toString();
         ?>
